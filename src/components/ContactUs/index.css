@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Quattrocento&family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.contact-us{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    @media screen and (min-width: 768px){
+        flex-direction: row;
+        justify-content: space-between;
+        height: 67vh;
+        align-items: flex-start;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 30px;
+    }
+}
+
+.contact-left{
+    @media screen and (min-width: 768px){
+        width: 40%;
+    }
+}
+
+.contact-left h1 {
+    font-size: 32px;
+    font-family: "Quattrocento";
+    font-weight: 400;
+    margin-bottom: 0;
+    @media screen and (min-width: 768px){
+        font-size: 80px;
+    }
+}
+
+.contact-left p{
+    font-family: "Poppins";
+    color: #748494;
+    font-size: 12px;
+    @media screen and (min-width: 768px){
+        font-size: 24px;
+    }
+}
+
+.contact-left a{
+    color: #333F54;
+}
+
+.icon-1{
+    font-size: 35px;
+    margin-right: 10px;
+}
+
+.contact-right{
+    @media screen and (min-width: 768px){
+        width: 60%;
+        height: 50vh;
+        align-self: flex-start;
+    }
+}
+
+.contact-right .contact-form {
+    padding-right: 10px;
+    border-radius: 8px;
+    color: #fff;
+    height: 100%;
+    @media screen and (min-width: 768px){
+        background-color: #2A3543;
+        padding: 40px;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+  }
+  
+.input-field, .textarea-field {
+    height: 30px;
+    width: 100%;
+    margin-bottom: 15px;
+    outline: none;
+    padding-left: 10px;
+    border: 0;
+    background-color:#F1F2F4;
+  }
+
+.textarea-field{
+    height: 353px;
+    height: 161px;
+}
+  
+.form-row{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+    }
+}
+
+.form-row input{
+    width: 100%;
+    border: 0;
+    margin-bottom: 15px;
+    background-color: #F1F2F4;
+    @media screen and (min-width: 768px) {
+        width: 46%;
+    }
+}
+
+.contact-form button{
+    border: 0;
+    background-color: #4C9CFD;
+    height: 45px;
+    width: 130px;
+    border-radius: 7px;
+    color: #fff;
+    font-family: 'poppins';
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.icon-cont{
+    display: none;
+    @media screen and (min-width: 768px){
+        display: block;
+    }
+}

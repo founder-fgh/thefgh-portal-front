@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Quattrocento&family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.profile-card-container {
+    text-align: center;
+    padding-top: 10px;
+    @media screen and (min-width: 768px){
+      margin-left: 20px;
+    }
+  }
+
+.profile-card-container h1 {
+    font-family: "Quattrocento";
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 0;
+    margin-top: 0;
+    @media screen and (min-width){
+      font-size: 64px;
+    }
+}
+  
+  .profile-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    @media screen and (min-width: 768px){
+      flex-direction: row;
+      align-items: flex-end;
+      justify-content: flex-start;
+      margin-top: 20px;
+
+    }
+  }
+  
+  .profile-image img {
+    width: 275px;
+    height: 302px;
+    border-radius: 8px;
+  }
+  
+  .profile-details {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-top: 0;
+    margin: 14px;
+    @media screen and (min-width:768px){
+      width: 70vw;
+    }
+  }
+  
+  .profile-details h2 {
+    font-family: "Quattrocento";
+    font-weight: 400;
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .profile-details h2 span {
+    font-size: 18px;
+    font-weight: normal;
+  }
+  
+  .profile-details p {
+    font-size: 14px;
+    font-family: "Poppins";
+    margin-bottom: 0;
+    margin-top: 0;
+    line-height: 1.5;
+  }
+  
+  .profile-details blockquote {
+    background-color: #3574E1;
+    font-style: italic;
+    color: #fff;
+    margin: 0;
+    margin-top: 10px;
+    margin-right: 20;
+    padding: 10px;
+    font-family: "poppins";
+    font-size: 14px;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    border-bottom-right-radius: 24px;
+    width: 85%;
+  }
+  
+  /* .profile-contact a {
+    margin-right: 10px;
+  } */
+  
+  .icon-our-team{
+    color: #4379D5;
+    font-size: 24px;
+}
+.profile-bottom{
+  @media screen and (min-width: 768px){
+    display: flex;
+    align-items: center;
+  }
+}
+.founder-contact{
+  margin-left: 20px;
+}
+
+.founder-contact h5{
+    margin: 0;
+}
+
+.founder-contact div{
+    display: flex;
+}
+
+.team-imgs{
+    display: flex;
+    flex-direction: column;
+    @media screen and (min-width: 768px){
+      flex-direction: row;
+      justify-content: space-between;
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+}
+
+.team-imgs img {
+  width: 100vw;
+  margin-bottom: 0;
+  @media screen and (min-width: 768px) {
+    width: 30%;
+  }
+}
+
+.founder-img{
+  filter: drop-shadow(5px -5px 10px grey)
+}
+
+.team-members{
+  padding-left: 0;
+  padding: 2%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0
+}
