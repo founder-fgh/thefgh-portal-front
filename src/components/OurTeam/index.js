@@ -11,7 +11,7 @@ const teamMembers = [
         description: `Namratha is the creative mind behind FGH’s sleek and user-friendly
          interface. With a knack for turning complex designs into seamless user experiences,
           they lead the charge in ensuring every visitor feels right at home. Skilled in 
-          technologies like [e.g., React, HTML5, CSS3],they are passionate about 
+          technologies like React, JavaScript, Bootstrap, HTML5, CSS3, Tailwind CSS they are passionate about 
           crafting innovative solutions for modern problems.`,
         image: 'https://res.cloudinary.com/dzhzfdugz/image/upload/v1736696051/cfrwk5mhrool62frl9bv.png'
     },
@@ -33,6 +33,16 @@ const teamMembers = [
          principles with innovative solutions.`,
         image: 'https://res.cloudinary.com/dzhzfdugz/image/upload/v1736696073/hotd6arrt2mjwcynyqlh.png'
     },
+    {
+        name: 'Hemalatha',
+        role: 'Java Developer',
+        description: `Hemalatha is the creative mind behind FGH’s sleek and user-friendly
+         interface. With a knack for turning complex designs into seamless user experiences,
+          they lead the charge in ensuring every visitor feels right at home. Skilled in 
+          technologies like Java, Sql, HTML, CSS, Sprimg, Springboot they are passionate about 
+          crafting innovative solutions for modern problems.`,
+        image: 'https://res.cloudinary.com/dpamz1hsi/image/upload/c_crop,g_auto,h_300,w_300,r_max/zkxciqkcnjylfq5m2eqd.png'
+    }
 ]
 
 const OurTeam = () => (
@@ -43,8 +53,8 @@ const OurTeam = () => (
         <div className="profile-card">
             <div className="profile-image">
             <img
-                src="https://s3-alpha-sig.figma.com/img/08b0/bc3b/2a3aa12f8886f3093a7bc65b4b927ae7?Expires=1736726400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=V18X7-GzlGjyrzXAQg3sXk81ZEgtkDoXrcByqLlfHPWRYy7PojkqvBjcCPeWBy1Pn2DNNMot23lzQqk2oAa3xP36dEO8UPjBWL6qMfDIO90mCFREK5J0KqIcherCBcMDajvpL0I1g5yesBBjVTOu2cwfYqNhlancLP3iHbGaN8YFNOOniNk2Rl91yqR465e2IwbREQWbMUK05aPZqrlTSjp3eD5~5wq8SFquKQc0CbRExrQHZhRtYsKODP4ladTtBersDCv~2GhaZ~61Bc9P06JXI-WHoxDtZvBThJ-4ZIIA6jN4cxHTsOgwYhaOA4bcyJMc4BG1VpZckjzHoDv~7Q__"
-                alt="Prasad M"
+                src="https://res.cloudinary.com/dpamz1hsi/image/upload/v1737004104/uyentponvzwxfptqfsrj.png"
+                alt="founder-img"
                 className="founder-img"
             />
             </div>

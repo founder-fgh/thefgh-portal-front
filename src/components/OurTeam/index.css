@@ -83,7 +83,12 @@
     border-top-left-radius: 24px;
     border-top-right-radius: 24px;
     border-bottom-right-radius: 24px;
-    width: 85%;
+    width: 96%;
+    @media screen and (min-width768px){
+      width: 85%;
+
+    }
+
   }
   
   /* .profile-contact a {
@@ -92,7 +97,7 @@
   
   .icon-our-team{
     color: #4379D5;
-    font-size: 24px;
+    font-size: 28px;
 }
 .profile-bottom{
   @media screen and (min-width: 768px){

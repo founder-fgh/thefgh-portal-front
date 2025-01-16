@@ -17,7 +17,7 @@ class Header extends Component{
                     }
                     return(
                         <Navbar className="navbar">
-                            <Logo src="https://s3-alpha-sig.figma.com/img/883a/cd14/de88610e038a827a9c3f670853f0a65c?Expires=1737331200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=DzDpXu5sdA6RLVZZmotediSLpTVmLHf~er-~2aJOHpyHKktC68NbmDU1yvN-hxUxaw5M55v1nqWQZdnGSz3FSz5Tf17iku8Jcop4Pd3KpNEaMbb0RKER8KPl0aO~VRaHZgl0P4zjBltEj2L~X12Bj8E47r~ffUeXak8lEE-I2JCMNzKq1PO0V74hOfE7PrCKbvkP~9Ly4cWSuqMTLBb-803aCLJalPRSVC4mSyqlJ2sO04JHHkC57hHtcKZCcXsAIHleE6oY2YHRA0kRjpUq4EWeywb9v1XKZWIv3FAATpsNuSd75B~sngrKyhJ2lzBAzBtPZkgyR8SOza-Wwbe0kw__" alt=""/>
+                            <Logo src="https://res.cloudinary.com/dpamz1hsi/image/upload/v1737004049/lx8so2tsxcaaeujdtspk.png" alt="logo"/>
                         <ul className="nav-links">
                             <NavLink 
                                 onClick={onclickTab} 
