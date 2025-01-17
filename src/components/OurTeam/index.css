@@ -36,7 +36,6 @@
   .profile-image img {
     width: 275px;
     height: 302px;
-    border-radius: 8px;
   }
   
   .profile-details {
@@ -76,7 +75,6 @@
     color: #fff;
     margin: 0;
     margin-top: 10px;
-    margin-right: 20;
     padding: 10px;
     font-family: "poppins";
     font-size: 14px;
@@ -91,10 +89,7 @@
 
   }
   
-  /* .profile-contact a {
-    margin-right: 10px;
-  } */
-  
+
   .icon-our-team{
     color: #4379D5;
     font-size: 28px;
@@ -137,7 +132,7 @@
 }
 
 .founder-img{
-  filter: drop-shadow(5px -5px 10px grey)
+  filter: drop-shadow(0 0 50px #aaa6a6)
 }
 
 .team-members{

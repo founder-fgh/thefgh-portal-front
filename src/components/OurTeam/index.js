@@ -53,7 +53,7 @@ const OurTeam = () => (
         <div className="profile-card">
             <div className="profile-image">
             <img
-                src="https://res.cloudinary.com/dpamz1hsi/image/upload/v1737004104/uyentponvzwxfptqfsrj.png"
+                src="https://res.cloudinary.com/dpamz1hsi/image/upload/c_auto,g_auto,h_280,w_350,r_max/qi9cpaczeepx9dalaaq5.png"
                 alt="founder-img"
                 className="founder-img"
             />
