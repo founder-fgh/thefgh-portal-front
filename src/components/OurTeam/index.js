@@ -63,7 +63,7 @@ const cxos = [
         image: 'https://res.cloudinary.com/dpamz1hsi/image/upload/r_max/v1737869655/WhatsApp_Image_2025-01-24_at_15.16.14_wbcufj.png'
     },{
         name: 'Kiran Kumar G',
-        role: 'Frontend Developer',
+        role: 'Chief Operations Officer',
         description: `Kiran Kumar, COO at FGH, brings over 8 years of expertise in resource management 
         and operational strategy. With a proven track record at EY, he specializes in project scheduling, 
         demand management, and dashboard creation, driving efficiency and seamless operations at FGH.
