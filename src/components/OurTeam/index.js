@@ -45,6 +45,33 @@ const teamMembers = [
     }
 ]
 
+const cxos = [
+    {
+        name: 'Irfhan Ahamed',
+        role: 'Chief Technology Officer',
+        description: `With over 23 years of expertise in IT infrastructure and project management, 
+        Irfhan Ahamed drives technological innovation as the Chief Technology Officer of FGH. His 
+        extensive experience spans designing and implementing data, voice, Wi-Fi, CCTV, security, 
+        AV, and home automation systems, as well as building IT and ELV infrastructure for industries, 
+        hospitals, and homes. This expertise ensures FGH delivers seamless, connected solutions for 
+        students, professionals, and businesses.
+        Irfhan’s career highlights include pivotal roles such as IT & ELV Project Manager at the 
+        Amara Raja Group. He began his journey as a Customer Support Engineer at Jesuma Computers, 
+        refining his technical and leadership skills.
+        When he’s not exploring the latest tech trends, Irfhan enjoys helping others, engaging as an 
+        entertainment activist, and mentoring young IT enthusiasts.`,
+        image: 'https://res.cloudinary.com/dpamz1hsi/image/upload/r_max/v1737869655/WhatsApp_Image_2025-01-24_at_15.16.14_wbcufj.png'
+    },{
+        name: 'Kiran Kumar G',
+        role: 'Frontend Developer',
+        description: `Kiran Kumar, COO at FGH, brings over 8 years of expertise in resource management 
+        and operational strategy. With a proven track record at EY, he specializes in project scheduling, 
+        demand management, and dashboard creation, driving efficiency and seamless operations at FGH.
+        Fun Fact: When not strategizing, Kiran loves exploring new places and cuisines while mentoring young talents.`,
+        image: 'https://res.cloudinary.com/dpamz1hsi/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max/v1737717053/WhatsApp_Image_2025-01-24_at_15.17.10_nbrbau.png'
+    },
+]
+
 const OurTeam = () => (
     <>
         <Header/>
@@ -93,6 +120,13 @@ const OurTeam = () => (
             </div>
         </div>
         </div>
+        <ul className="cxos-team">
+            {
+                cxos.map((mem) => (
+                    <TeamMember mem={mem}/>
+                ))
+            }
+        </ul>
         <ul className="team-members">
             {
                 teamMembers.map((mem) => (

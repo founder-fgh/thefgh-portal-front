@@ -143,3 +143,11 @@
   flex-wrap: wrap;
   margin: 0
 }
+.cxos-team{
+  padding-left: 0;
+  padding: 2%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 0
+}

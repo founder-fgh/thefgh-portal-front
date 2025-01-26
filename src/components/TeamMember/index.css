@@ -7,9 +7,13 @@
     justify-content: flex-start;
     align-items: center;
     margin: 20px;
+    margin-bottom: 0;
+    max-height: 60vh;
     @media screen and (min-width: 768px) {
         padding: 20px;
         width: 25%;
+        margin-top: 0;
+        height: 70vh;
     }
 }
 
@@ -50,7 +54,7 @@
 }
 
 .hidden{
-    max-height: 15%;
+    max-height: 18%;
     overflow:hidden;
     text-overflow: ellipsis;
     margin-bottom: 0;
@@ -63,4 +67,6 @@
 .show{
     color: #4E596E;
     margin-bottom: 0;
+    max-height: 38%;
+    overflow-y: auto;
 }
