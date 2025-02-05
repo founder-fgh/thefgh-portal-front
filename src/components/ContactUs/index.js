@@ -52,7 +52,7 @@ class ContactUs extends Component{
         const {firstName, lastName, email, thoughts} = this.state
         return (
             <>
-            <Header/>
+            {/* <Header/> */}
             <div className="contact-us">
                 <div className="contact-left">
                     <h1>Get in Touch with Us</h1>

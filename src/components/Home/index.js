@@ -1,4 +1,5 @@
 import { Component } from 'react'
+import {Link} from 'react-router-dom'
 
 import Header from '../Header'
 import {HomeCont, InEl, Head, HD, Btn1, Btn2, SearchIcon, SearchContainer, Search} from './styledComponents'
@@ -16,7 +17,7 @@ class Home extends Component{
         const {searchIn} = this.state
         return (
             <div>
-                <Header/>
+                {/* <Header/> */}
                 <HomeCont>
                     <div>
                         <Head>Find, Grow, Hustle</Head>
@@ -35,7 +36,9 @@ class Home extends Component{
                         </SearchContainer>
                     </div>
                     <div>
-                        <Btn1>Sign up</Btn1>
+                        <Btn1>
+                            Sign Up
+                        </Btn1>
                         <Btn2>Log in </Btn2>
                     </div>
                 </HomeCont>

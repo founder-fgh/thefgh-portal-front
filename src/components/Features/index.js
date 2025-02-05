@@ -33,7 +33,7 @@ const features = [
 
 const Features = () => (
     <>
-        <Header/>
+        {/* <Header/> */}
         <FeatureCont>
             <FHead>Discover Our Core Features</FHead>
             <FeaturesLi className='features-list'>

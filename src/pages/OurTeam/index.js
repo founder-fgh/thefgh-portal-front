@@ -1,18 +1,28 @@
 import { CiMail, CiLinkedin } from "react-icons/ci";
 
-import Header from "../Header";
-import TeamMember from "../TeamMember";
+// import Header from "../../components/Header"
+import TeamMember from "../../components/TeamMember";
 import './index.css'
 
 const teamMembers = [
+    {
+        name: 'Anil Kumar',
+        role: 'Full stack Developer',
+        description: `I'm Anil Kumar, a full-stack developer with a designer's eye. I've worked
+         as an intern at multiple startups, won several hackathons, and have a strong passion for
+          building innovative solutions. My technical expertise includes React, Node.js, Drizzle ORM,
+           and NeonDB, and I also excel as a UI/UX designer, crafting intuitive and visually appealing
+            user experiences.`,
+        image: 'https://res.cloudinary.com/dpamz1hsi/image/upload/c_crop,g_face,h_950,w_950,r_max/nwl9cwyozakbdffwvlfd.png'
+    },
     {
         name: 'Namratha',
         role: 'Frontend Developer',
         description: `Namratha is the creative mind behind FGH’s sleek and user-friendly
          interface. With a knack for turning complex designs into seamless user experiences,
           they lead the charge in ensuring every visitor feels right at home. Skilled in 
-          technologies like React, JavaScript, Bootstrap, HTML5, CSS3, Tailwind CSS they are passionate about 
-          crafting innovative solutions for modern problems.`,
+          technologies like React, JavaScript, Bootstrap, HTML5, CSS3, Tailwind CSS. She is passionate 
+          about crafting innovative solutions for modern problems.`,
         image: 'https://res.cloudinary.com/dzhzfdugz/image/upload/v1736696051/cfrwk5mhrool62frl9bv.png'
     },
     {
@@ -39,9 +49,19 @@ const teamMembers = [
         description: `Hemalatha is the creative mind behind FGH’s sleek and user-friendly
          interface. With a knack for turning complex designs into seamless user experiences,
           they lead the charge in ensuring every visitor feels right at home. Skilled in 
-          technologies like Java, Sql, HTML, CSS, Sprimg, Springboot they are passionate about 
+          technologies like Java, Sql, HTML, CSS, Spring, Springboot they are passionate about 
           crafting innovative solutions for modern problems.`,
         image: 'https://res.cloudinary.com/dpamz1hsi/image/upload/c_crop,g_auto,h_300,w_300,r_max/zkxciqkcnjylfq5m2eqd.png'
+    },
+    {
+        name: 'Naga Jyothi',
+        role: 'Backend Developer',
+        description: `I'm Naga Jyothi, a backend developer with a passion for creating efficient 
+        and scalable applications. With hands-on experience in Node.js and Express, I specialize 
+        in building robust APIs and managing databases using MongoDB and NeonDB. I am committed 
+        to writing clean, maintainable code and continuously learning to stay ahead in the 
+        ever-evolving tech landscape`,
+        image: 'https://res.cloudinary.com/dpamz1hsi/image/upload/c_crop,g_face,h_1000,w_1000,r_max/v1738492585/wtbtyo9jrrtuharlx9o9.png'
     }
 ]
 
@@ -74,7 +94,7 @@ const cxos = [
 
 const OurTeam = () => (
     <>
-        <Header/>
+        {/* <Header/> */}
         <div className="profile-card-container">
         <h1>Meet Our Crew</h1>
         <div className="profile-card">

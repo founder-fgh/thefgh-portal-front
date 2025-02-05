@@ -132,7 +132,9 @@
 }
 
 .founder-img{
-  filter: drop-shadow(0 0 50px #aaa6a6)
+  filter: drop-shadow(0 0 50px #aaa6a6);
+  position: relative;
+  z-index: -2;
 }
 
 .team-members{
