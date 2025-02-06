@@ -14,7 +14,6 @@ const teamMembers = [
         in React, Node.js, Drizzle ORM, and NeonDB, he also excels in UI/UX design, crafting intuitive 
         and visually appealing user experiences. His problem-solving skills and ability to create 
         seamless digital solutions make him an invaluable part of the team.
-
         Anil has won several hackathons and loves turning creative ideas into functional, user-friendly applications.`,
         image: 'https://res.cloudinary.com/dpamz1hsi/image/upload/c_crop,g_face,h_950,w_950,r_max/nwl9cwyozakbdffwvlfd.png'
     },
