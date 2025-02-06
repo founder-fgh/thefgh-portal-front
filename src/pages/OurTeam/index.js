@@ -7,12 +7,14 @@ import './index.css'
 const teamMembers = [
     {
         name: 'Anil Kumar',
-        role: 'Full stack Developer',
-        description: `I'm Anil Kumar, a full-stack developer with a designer's eye. I've worked
-         as an intern at multiple startups, won several hackathons, and have a strong passion for
-          building innovative solutions. My technical expertise includes React, Node.js, Drizzle ORM,
-           and NeonDB, and I also excel as a UI/UX designer, crafting intuitive and visually appealing
-            user experiences.`,
+        role: 'Team Lead',
+        description: `Anil Kumar is a skilled full-stack developer with a keen eye for design. 
+        With experience as an intern at multiple startups and a passion for building innovative 
+        solutions, he brings a unique blend of technical expertise and creativity to FGH. Proficient 
+        in React, Node.js, Drizzle ORM, and NeonDB, he also excels in UI/UX design, crafting intuitive 
+        and visually appealing user experiences. His problem-solving skills and ability to create 
+        seamless digital solutions make him an invaluable part of the team.
+        Anil has won several hackathons and loves turning creative ideas into functional, user-friendly applications.`,
         image: 'https://res.cloudinary.com/dpamz1hsi/image/upload/c_crop,g_face,h_950,w_950,r_max/nwl9cwyozakbdffwvlfd.png'
     },
     {
