@@ -14,13 +14,14 @@ export const FeaturesLi = styled.ul `
     padding-left: 0;
     display: flex;
     flex-direction: column;
-    padding: 10%;
+    align-items: center;
+    // padding: 7%;
     padding-top:0;
     @media screen and (min-width: 768px){
         flex-direction: row;
         justify-content: center;
         flex-wrap: wrap;
-        width: 65vw;
+        // width: vw;
     }
 `
 export const FHead = styled.h1 `

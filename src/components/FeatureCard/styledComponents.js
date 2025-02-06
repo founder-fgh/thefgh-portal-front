@@ -24,8 +24,9 @@ export const FetureCard = styled.li `
         margin: 14px;
         padding: 15px;
         border-radius: 15px;
-        width: 26vw;
-        height: 32vh;
+        min-width: 280px;
+        max-width: 30vw;
+        height: 35vh;
     }
 `
 export const Dot = styled.p `
@@ -94,7 +95,7 @@ export const Btn3 = styled.button `
 `
 export const FcHead = styled.h2 `
     font-weight: 500;
-    font-size: 32px;
+    font-size: 28px;
     margin: 0;
     color: ${props => {
         switch(props.cat){
@@ -125,7 +126,6 @@ export const FcDes = styled.p `
     }};
     font-weight: 400;
     line-height: 1.6;
-    width: 85%;
     @media screen and (min-width: 768px){
     font-size: 14px;
     }

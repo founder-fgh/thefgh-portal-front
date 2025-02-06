@@ -13,7 +13,7 @@ const features = [
     },
     {
         title: "Participate & Win",
-        description: "SCompete in skill-based contests and quizzes for rewards, recognition, and growth.",
+        description: "Compete in skill-based contests and quizzes for rewards, recognition, and growth.",
         action: "Join Contests",
         cat:2,
     },
@@ -33,7 +33,7 @@ const features = [
 
 const Features = () => (
     <>
-        <Header/>
+        {/* <Header/> */}
         <FeatureCont>
             <FHead>Discover Our Core Features</FHead>
             <FeaturesLi className='features-list'>

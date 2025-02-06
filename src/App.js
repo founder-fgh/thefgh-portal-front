@@ -1,13 +1,15 @@
 import { Component } from 'react';
-import { Switch, Route, Redirect } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 
-import Home from './components/Home'
-import Features from './components/Features';
-import AboutUs from './components/AboutUs'
-import ContactUs from './components/ContactUs';
-import OurTeam from './components/OurTeam';
+
+import Header from './components/Header';
+
+import ScrollablePage from './pages/ScrollablePage';
+import OurTeam from './pages/OurTeam';
 
 import HeaderContext from './contexts/HeaderContext';
+
+import './app.css'
 
 
 class App extends Component {
@@ -23,14 +25,12 @@ class App extends Component {
     const {activeTab} = this.state  
        return(
       <HeaderContext.Provider value={{activeTab, changeTab: this.onChangeTab}}>
-        <Switch>
-        <Route exact path="/" component={Home}/>
-        <Route path="/features" component={Features}/>
-        <Route path="/about-us" component={AboutUs}/>
-        <Route path="/contact-us" component={ContactUs}/>
-        <Route path="/our-team" component={OurTeam}/>
-        <Redirect to="/"/>
-      </Switch>
+          <Header/>
+          <Routes>
+            <Route path="/" element={<ScrollablePage/>}/>
+            <Route path="/our-team" element={<OurTeam/>}/>
+            {/* <Navigate to="/"/> */}
+        </Routes>
       </HeaderContext.Provider>
     )
   }

@@ -1,45 +1,50 @@
 import { Component } from "react";
-import {Navbar, NavLink, Logo, MobNav, MobLink, Ham, Pop} from './styledComponents'
+// import {useNavigate} from 'react-router-dom'
 import Popup from 'reactjs-popup'
 import { RxHamburgerMenu } from "react-icons/rx";
-// import {IoMdClose} from 'react-icons/io'
+
+import {Navbar,MobBtn, Btn, NavLink, Logo, MobNav, MobLink, Ham, Pop} from './styledComponents'
 
 import HeaderContext from "../../contexts/HeaderContext";
 
 class Header extends Component{
+    handleNavigation = (section) => {
+        window.location.href = `/?scrollTo=${section}`;
+      };
+    
     render(){
         return(
             <HeaderContext.Consumer>
                 {value =>{
                     const {activeTab, changeTab} = value 
+                    const onclickBtn = (event) => {
+                        console.log(event.target.id)
+                        this.handleNavigation(event.target.id)
+                        changeTab(event.target.id)
+                    }
                     const onclickTab = (event) => {
                         changeTab(event.target.id)
                     }
                     return(
                         <Navbar className="navbar">
-                            <Logo src="https://s3-alpha-sig.figma.com/img/883a/cd14/de88610e038a827a9c3f670853f0a65c?Expires=1737331200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=DzDpXu5sdA6RLVZZmotediSLpTVmLHf~er-~2aJOHpyHKktC68NbmDU1yvN-hxUxaw5M55v1nqWQZdnGSz3FSz5Tf17iku8Jcop4Pd3KpNEaMbb0RKER8KPl0aO~VRaHZgl0P4zjBltEj2L~X12Bj8E47r~ffUeXak8lEE-I2JCMNzKq1PO0V74hOfE7PrCKbvkP~9Ly4cWSuqMTLBb-803aCLJalPRSVC4mSyqlJ2sO04JHHkC57hHtcKZCcXsAIHleE6oY2YHRA0kRjpUq4EWeywb9v1XKZWIv3FAATpsNuSd75B~sngrKyhJ2lzBAzBtPZkgyR8SOza-Wwbe0kw__" alt=""/>
+                            <Logo src="https://res.cloudinary.com/dpamz1hsi/image/upload/v1737004049/lx8so2tsxcaaeujdtspk.png" alt="logo"/>
                         <ul className="nav-links">
                             <NavLink 
                                 onClick={onclickTab} 
-                                status={activeTab==="home"} 
-                                id="home" 
+                                status={activeTab==="Home"} 
+                                id="Home" 
                                 to="/">
                                     Home
                             </NavLink>
-                            <NavLink 
-                                onClick={onclickTab} 
-                                status={activeTab==="features"} 
-                                id="features" 
-                                to="/features">
-                                    Features
-                            </NavLink>
-                            <NavLink 
-                                onClick={onclickTab} 
-                                status={activeTab==="aboutUs"} 
-                                id="aboutUs" 
-                                to="/about-us">
-                                    About Us
-                            </NavLink>
+                            <Btn id="features" status={activeTab==="features"}  onClick={onclickBtn}>
+                                Features
+                            </Btn>
+                            <Btn id="about-us" status={activeTab==="about-us"}  onClick={onclickBtn}>
+                                About Us
+                            </Btn>
+                            <Btn id="faq" status={activeTab==="faq"}  onClick={onclickBtn}>
+                                FAQ
+                            </Btn>
                             <NavLink 
                                 onClick={onclickTab} 
                                 status={activeTab==="ourTeam"} 
@@ -47,20 +52,9 @@ class Header extends Component{
                                 to="/our-team">
                                     Our Team
                             </NavLink>
-                            <NavLink 
-                                onClick={onclickTab} 
-                                status={activeTab==="faq"} 
-                                id="faq" 
-                                to="/faq">
-                                    FAQ
-                            </NavLink>
-                            <NavLink 
-                                onClick={onclickTab} 
-                                status={activeTab==="contactUs"} 
-                                id="contactUs" 
-                                to="/contact-us">
-                                    Contact Us
-                            </NavLink>
+                            <Btn id="contact-us" status={activeTab==="contact-us"}  onClick={onclickBtn}>
+                                Contact Us
+                            </Btn>
                         </ul>
                         <Pop className="popup-container">
                             <Popup
@@ -79,20 +73,15 @@ class Header extends Component{
                                         to="/">
                                             Home
                                     </MobLink>
-                                    <MobLink 
-                                        onClick={onclickTab} 
-                                        status={activeTab==="features"} 
-                                        id="features" 
-                                        to="/features">
-                                            Features
-                                    </MobLink>
-                                    <MobLink 
-                                        onClick={onclickTab} 
-                                        status={activeTab==="aboutUs"} 
-                                        id="aboutUs" 
-                                        to="/about-us">
-                                            About Us
-                                    </MobLink>
+                                    <MobBtn id="features" status={activeTab==="features"}  onClick={onclickBtn}>
+                                        Features
+                                    </MobBtn>
+                                    <MobBtn id="about-us" status={activeTab==="about-us"}  onClick={onclickBtn}>
+                                        About Us
+                                    </MobBtn>
+                                    <MobBtn id="faq" status={activeTab==="faq"}  onClick={onclickBtn}>
+                                        FAQ
+                                    </MobBtn>
                                     <MobLink 
                                         onClick={onclickTab} 
                                         status={activeTab==="ourTeam"} 
@@ -100,21 +89,14 @@ class Header extends Component{
                                         to="/our-team">
                                             Our Team
                                     </MobLink>
-                                    <MobLink 
-                                        onClick={onclickTab} 
-                                        status={activeTab==="faq"} 
-                                        id="faq" 
-                                        to="/faq">
-                                            FAQ
-                                    </MobLink>
-                                    <MobLink 
-                                        onClick={onclickTab} 
+                                    <MobBtn 
+                                        onClick={onclickBtn} 
                                         status={activeTab==="contactUs"} 
-                                        id="contactUs" 
-                                        to="/contact-us">
+                                        id="contact-us" 
+                                        to="contact-us">
                                             Contact Us
-                                    </MobLink>
-                        </MobNav>
+                                    </MobBtn>
+                                </MobNav>
                             </Popup>
                         </Pop>
                     </Navbar>

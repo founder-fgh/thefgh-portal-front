@@ -36,7 +36,6 @@
   .profile-image img {
     width: 275px;
     height: 302px;
-    border-radius: 8px;
   }
   
   .profile-details {
@@ -76,23 +75,24 @@
     color: #fff;
     margin: 0;
     margin-top: 10px;
-    margin-right: 20;
     padding: 10px;
     font-family: "poppins";
     font-size: 14px;
     border-top-left-radius: 24px;
     border-top-right-radius: 24px;
     border-bottom-right-radius: 24px;
-    width: 85%;
+    width: 96%;
+    @media screen and (min-width768px){
+      width: 85%;
+
+    }
+
   }
   
-  /* .profile-contact a {
-    margin-right: 10px;
-  } */
-  
+
   .icon-our-team{
     color: #4379D5;
-    font-size: 24px;
+    font-size: 28px;
 }
 .profile-bottom{
   @media screen and (min-width: 768px){
@@ -132,7 +132,9 @@
 }
 
 .founder-img{
-  filter: drop-shadow(5px -5px 10px grey)
+  filter: drop-shadow(0 0 50px #aaa6a6);
+  position: relative;
+  z-index: -2;
 }
 
 .team-members{
@@ -140,6 +142,14 @@
   padding: 2%;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0
+}
+.cxos-team{
+  padding-left: 0;
+  padding: 2%;
+  display: flex;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   margin: 0
 }
